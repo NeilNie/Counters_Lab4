@@ -1,0 +1,248 @@
+$comment
+	File created using the following command:
+		vcd file Part2.msim.vcd -direction
+$end
+$date
+	Wed Nov 14 00:11:39 2018
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Part2_vlg_vec_tst $end
+$var reg 1 ! CLOCK_50 $end
+$var wire 1 " HEX0 [6] $end
+$var wire 1 # HEX0 [5] $end
+$var wire 1 $ HEX0 [4] $end
+$var wire 1 % HEX0 [3] $end
+$var wire 1 & HEX0 [2] $end
+$var wire 1 ' HEX0 [1] $end
+$var wire 1 ( HEX0 [0] $end
+$var wire 1 ) count [3] $end
+$var wire 1 * count [2] $end
+$var wire 1 + count [1] $end
+$var wire 1 , count [0] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 HEX0[0]~output_o $end
+$var wire 1 4 HEX0[1]~output_o $end
+$var wire 1 5 HEX0[2]~output_o $end
+$var wire 1 6 HEX0[3]~output_o $end
+$var wire 1 7 HEX0[4]~output_o $end
+$var wire 1 8 HEX0[5]~output_o $end
+$var wire 1 9 HEX0[6]~output_o $end
+$var wire 1 : count[0]~output_o $end
+$var wire 1 ; count[1]~output_o $end
+$var wire 1 < count[2]~output_o $end
+$var wire 1 = count[3]~output_o $end
+$var wire 1 > CLOCK_50~input_o $end
+$var wire 1 ? CLOCK_50~inputclkctrl_outclk $end
+$var wire 1 @ count~2_combout $end
+$var wire 1 A count[2]~reg0_q $end
+$var wire 1 B count~0_combout $end
+$var wire 1 C count[0]~reg0_q $end
+$var wire 1 D count~1_combout $end
+$var wire 1 E count[3]~reg0_q $end
+$var wire 1 F count~3_combout $end
+$var wire 1 G count[1]~reg0_q $end
+$var wire 1 H display|Add14~0_combout $end
+$var wire 1 I display|Add11~0_combout $end
+$var wire 1 J display|Add8~0_combout $end
+$var wire 1 K display|Add6~0_combout $end
+$var wire 1 L display|Add3~0_combout $end
+$var wire 1 M display|Add0~0_combout $end
+$var wire 1 N display|out [6] $end
+$var wire 1 O display|out [5] $end
+$var wire 1 P display|out [4] $end
+$var wire 1 Q display|out [3] $end
+$var wire 1 R display|out [2] $end
+$var wire 1 S display|out [1] $end
+$var wire 1 T display|out [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0(
+0'
+0&
+0%
+0$
+0#
+1"
+0,
+0+
+0*
+0)
+0-
+1.
+x/
+10
+11
+12
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+zT
+zS
+zR
+zQ
+0P
+zO
+zN
+$end
+#2000
+1!
+1>
+1?
+1C
+1:
+1,
+1L
+1P
+1K
+1H
+1F
+0B
+13
+16
+17
+18
+1#
+1$
+1%
+1(
+#4000
+0!
+0>
+0?
+#6000
+1!
+1>
+1?
+1G
+0C
+0:
+1;
+1M
+1+
+0,
+0P
+0K
+1J
+0H
+1B
+03
+15
+06
+07
+09
+0"
+0$
+0%
+1&
+0(
+#8000
+0!
+0>
+0?
+#10000
+1!
+1>
+1?
+1C
+1:
+1,
+1P
+0J
+0F
+0B
+1@
+05
+17
+1$
+0&
+#12000
+0!
+0>
+0?
+#14000
+1!
+1>
+1?
+0G
+0C
+1A
+1<
+0:
+0;
+0+
+0,
+1*
+0L
+1K
+1H
+1B
+13
+16
+08
+0#
+1%
+1(
+#16000
+0!
+0>
+0?
+#18000
+1!
+1>
+1?
+1C
+1:
+1,
+0K
+1I
+0H
+1F
+0B
+03
+14
+06
+0%
+1'
+0(
+#20000

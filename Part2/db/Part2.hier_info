@@ -1,0 +1,97 @@
+|Part2
+HEX0[0] <= seven_segment_display:display.out
+HEX0[1] <= seven_segment_display:display.out
+HEX0[2] <= seven_segment_display:display.out
+HEX0[3] <= seven_segment_display:display.out
+HEX0[4] <= seven_segment_display:display.out
+HEX0[5] <= seven_segment_display:display.out
+HEX0[6] <= seven_segment_display:display.out
+CLOCK_50 => CLOCK_50.IN1
+count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part2|clock_1hz:clock
+clk => out_1hz.CLK
+clk => count_reg[0].CLK
+clk => count_reg[1].CLK
+clk => count_reg[2].CLK
+clk => count_reg[3].CLK
+clk => count_reg[4].CLK
+clk => count_reg[5].CLK
+clk => count_reg[6].CLK
+clk => count_reg[7].CLK
+clk => count_reg[8].CLK
+clk => count_reg[9].CLK
+clk => count_reg[10].CLK
+clk => count_reg[11].CLK
+clk => count_reg[12].CLK
+clk => count_reg[13].CLK
+clk => count_reg[14].CLK
+clk => count_reg[15].CLK
+clk => count_reg[16].CLK
+clk => count_reg[17].CLK
+clk => count_reg[18].CLK
+clk => count_reg[19].CLK
+clk => count_reg[20].CLK
+clk => count_reg[21].CLK
+clk => count_reg[22].CLK
+clk => count_reg[23].CLK
+clk => count_reg[24].CLK
+clk => count_reg[25].CLK
+out <= out_1hz.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part2|seven_segment_display:display
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[0] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN1
+in[1] => out.IN0
+in[1] => out.IN1
+in[1] => out.IN0
+in[2] => out.IN0
+in[2] => out.IN0
+in[2] => out.IN1
+in[2] => out.IN1
+in[2] => out.IN0
+in[2] => out.IN0
+in[2] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+in[3] => out.IN1
+out[0] <= Add14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Add11.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Add8.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
