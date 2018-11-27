@@ -1,0 +1,10 @@
+//
+// Verilog Lab 4 Part 1
+// Neil Nie, (c) 2018
+// All Rights Reserved
+// MIT License
+//
+
+module Part1();
+
+endmodule

@@ -1,0 +1,157 @@
+|Part1
+clock => clock.IN8
+enable => enable.IN1
+out[0] <= t_flip_flop:ff8.Q
+out[1] <= t_flip_flop:ff1.Q
+out[2] <= t_flip_flop:ff2.Q
+out[3] <= t_flip_flop:ff3.Q
+out[4] <= t_flip_flop:ff4.Q
+out[5] <= t_flip_flop:ff5.Q
+out[6] <= t_flip_flop:ff6.Q
+out[7] <= t_flip_flop:ff7.Q
+
+
+|Part1|t_flip_flop:ff8
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff8|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff8|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff1
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff1|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff1|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff2
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff2|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff2|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff3
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff3|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff3|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff4
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff4|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff4|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff5
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff5|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff5|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff6
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff6|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff6|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff7
+clk => clk.IN1
+T => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Part1|t_flip_flop:ff7|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part1|t_flip_flop:ff7|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
