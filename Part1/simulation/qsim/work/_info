@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER1/Digital Logic/Counters_Lab4/Part1/simulation/qsim
+vhard_block
+Z1 !s110 1543427205
+!i10b 1
+!s100 <IQSK0nh2G4gddc^Snfd21
+I[Jfl:o^KoLoN3LB1>7gNV3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1543427203
+Z4 8Part1.vo
+Z5 FPart1.vo
+L0 888
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1543427205.000000
+Z8 !s107 Part1.vo|
+Z9 !s90 -work|work|Part1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vPart1
+R1
+!i10b 1
+!s100 k^h8D@ULDNNPiU;o7<fck0
+I6HlZ9D52eEX>061YZR80C2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@part1
+vPart1_vlg_vec_tst
+R1
+!i10b 1
+!s100 S_S=O;4_:kX[WlF639lkd3
+IzZA`XZA>R;?hoh9]:Sd?42
+R2
+R0
+w1543427202
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@part1_vlg_vec_tst

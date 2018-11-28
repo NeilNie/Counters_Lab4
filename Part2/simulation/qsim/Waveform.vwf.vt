@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/14/2018 11:18:35"
+// Generated on "11/28/2018 12:29:24"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Part2
 // 
@@ -29,29 +29,27 @@
 module Part2_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLOCK_50;
+reg [1:0] KEY;
 // wires                                               
-wire [6:0] HEX7;
-wire [3:0] count;
+wire [7:0] LEDR;
 
 // assign statements (if any)                          
 Part2 i1 (
 // port map - connection between master ports and signals/registers   
-	.CLOCK_50(CLOCK_50),
-	.HEX7(HEX7),
-	.count(count)
+	.KEY(KEY),
+	.LEDR(LEDR)
 );
 initial 
 begin 
-#20000 $finish;
+#30000 $finish;
 end 
 
-// CLOCK_50
+// KEY[0]
 always
 begin
-	CLOCK_50 = 1'b0;
-	CLOCK_50 = #2000 1'b1;
-	#2000;
+	KEY[0] = 1'b0;
+	KEY[0] = #2500 1'b1;
+	#2500;
 end 
 endmodule
 

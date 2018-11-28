@@ -3,24 +3,18 @@
 module t_flip_flop(clk, T, Q);
 
 input T, clk;
-output Q;
+output reg Q;
 
-wire Qm, Qs, D;
+initial begin
+	Q = 0;
+end 
 
-assign D = T ^ Q;
+always @ (posedge clk) begin
 
-gated_d_latch latch1(
-	.clk(~clk), 
-	.D(D), 
-	.Q(Qm)
-);
-
-gated_d_latch latch2(
-	.clk(clk), 
-	.D(Qm), 
-	.Q(Qs)
-);
-
-assign Q = Qs;
+	if (T == 1)
+		Q = ~Q;
+	else
+		Q = Q;
+end
 
 endmodule

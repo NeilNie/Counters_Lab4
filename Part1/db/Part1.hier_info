@@ -1,157 +1,112 @@
 |Part1
-clock => clock.IN8
-enable => enable.IN1
-out[0] <= t_flip_flop:ff8.Q
-out[1] <= t_flip_flop:ff1.Q
-out[2] <= t_flip_flop:ff2.Q
-out[3] <= t_flip_flop:ff3.Q
-out[4] <= t_flip_flop:ff4.Q
-out[5] <= t_flip_flop:ff5.Q
-out[6] <= t_flip_flop:ff6.Q
-out[7] <= t_flip_flop:ff7.Q
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+SW[0] => SW[0].IN1
+SW[1] => ~NO_FANOUT~
+out[0] << out_0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << out_1.DB_MAX_OUTPUT_PORT_TYPE
+out[2] << out_2.DB_MAX_OUTPUT_PORT_TYPE
+out[3] << out_3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] << out_4.DB_MAX_OUTPUT_PORT_TYPE
+out[5] << out_5.DB_MAX_OUTPUT_PORT_TYPE
+out[6] << out_6.DB_MAX_OUTPUT_PORT_TYPE
+out[7] << out_7.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] << seven_segment_decoder:display1.display
+HEX0[1] << seven_segment_decoder:display1.display
+HEX0[2] << seven_segment_decoder:display1.display
+HEX0[3] << seven_segment_decoder:display1.display
+HEX0[4] << seven_segment_decoder:display1.display
+HEX0[5] << seven_segment_decoder:display1.display
+HEX0[6] << seven_segment_decoder:display1.display
+HEX1[0] << seven_segment_decoder:display2.display
+HEX1[1] << seven_segment_decoder:display2.display
+HEX1[2] << seven_segment_decoder:display2.display
+HEX1[3] << seven_segment_decoder:display2.display
+HEX1[4] << seven_segment_decoder:display2.display
+HEX1[5] << seven_segment_decoder:display2.display
+HEX1[6] << seven_segment_decoder:display2.display
 
 
-|Part1|t_flip_flop:ff8
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff8|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff8|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+|Part1|t_flip_flop:ff0
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff1
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff1|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff1|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff2
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff2|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff2|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff3
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff3|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff3|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff4
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff4|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff4|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff5
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff5|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff5|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff6
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
-
-
-|Part1|t_flip_flop:ff6|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part1|t_flip_flop:ff6|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part1|t_flip_flop:ff7
-clk => clk.IN1
-T => D.IN1
-Q <= gated_d_latch:latch2.Q
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Part1|t_flip_flop:ff7|gated_d_latch:latch1
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+|Part1|seven_segment_decoder:display1
+n[0] => Decoder0.IN0
+n[1] => ~NO_FANOUT~
+n[2] => ~NO_FANOUT~
+n[3] => ~NO_FANOUT~
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <GND>
+display[2] <= <GND>
+display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= <VCC>
 
 
-|Part1|t_flip_flop:ff7|gated_d_latch:latch2
-clk => Q$latch.LATCH_ENABLE
-D => Q$latch.DATAIN
-Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+|Part1|seven_segment_decoder:display2
+n[0] => Decoder0.IN0
+n[1] => ~NO_FANOUT~
+n[2] => ~NO_FANOUT~
+n[3] => ~NO_FANOUT~
+display[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= <GND>
+display[2] <= <GND>
+display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= <VCC>
 
 

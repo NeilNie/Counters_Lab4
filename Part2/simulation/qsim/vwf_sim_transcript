@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Nov 14 11:18:32 2018
+    Info: Processing started: Wed Nov 28 12:29:23 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Part2 -c Part2 --vector_source="C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Waveform.vwf" --testbench_file="C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim/Waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Nov 14 11:18:36 2018
+    Info: Processing started: Wed Nov 28 12:29:25 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim/" Part2 -c Part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Part2.vo in folder "C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Wed Nov 14 11:18:37 2018
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Wed Nov 28 12:29:26 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,33 +79,33 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do Part2.do
 
+# do Part2.do
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:18:40 on Nov 14,2018
+# Start time: 12:29:27 on Nov 28,2018
 # vlog -work work Part2.vo 
 # -- Compiling module Part2
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	Part2
-
-# End time: 11:18:40 on Nov 14,2018, Elapsed time: 0:00:00
+# End time: 12:29:27 on Nov 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:18:41 on Nov 14,2018
+# Start time: 12:29:27 on Nov 28,2018
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module Part2_vlg_vec_tst
 # 
 # Top level modules:
 # 	Part2_vlg_vec_tst
-# End time: 11:18:41 on Nov 14,2018, Elapsed time: 0:00:00
+# End time: 12:29:27 on Nov 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Part2_vlg_vec_tst 
-# Start time: 11:18:42 on Nov 14,2018
+# Start time: 12:29:27 on Nov 28,2018
 # Loading work.Part2_vlg_vec_tst
 # Loading work.Part2
 # Loading work.hard_block
@@ -118,9 +118,10 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#26
-# ** Note: $finish    : Waveform.vwf.vt(46)
-#    Time: 20 ns  Iteration: 0  Instance: /Part2_vlg_vec_tst
-# End time: 11:18:43 on Nov 14,2018, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform.vwf.vt(44)
+#    Time: 30 ns  Iteration: 0  Instance: /Part2_vlg_vec_tst
+
+# End time: 12:29:28 on Nov 28,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -133,21 +134,7 @@ Reading C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim/Part2.m
 
 Processing channel transitions... 
 
-Warning: HEX0[6] - signal not found in VCD.
-
-Warning: HEX0[5] - signal not found in VCD.
-
-Warning: HEX0[4] - signal not found in VCD.
-
-Warning: HEX0[3] - signal not found in VCD.
-
-Warning: HEX0[2] - signal not found in VCD.
-
-Warning: HEX0[1] - signal not found in VCD.
-
-Warning: HEX0[0] - signal not found in VCD.
-
-Writing the resulting VWF to C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim/Part2_20181114111843.sim.vwf
+Writing the resulting VWF to C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/simulation/qsim/Part2_20181128122928.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -3,7 +3,7 @@ $comment
 		vcd file Part2.msim.vcd -direction
 $end
 $date
-	Wed Nov 14 11:18:43 2018
+	Wed Nov 28 12:29:28 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -13,236 +13,193 @@ $timescale
 $end
 
 $scope module Part2_vlg_vec_tst $end
-$var reg 1 ! CLOCK_50 $end
-$var wire 1 " HEX7 [6] $end
-$var wire 1 # HEX7 [5] $end
-$var wire 1 $ HEX7 [4] $end
-$var wire 1 % HEX7 [3] $end
-$var wire 1 & HEX7 [2] $end
-$var wire 1 ' HEX7 [1] $end
-$var wire 1 ( HEX7 [0] $end
-$var wire 1 ) count [3] $end
-$var wire 1 * count [2] $end
-$var wire 1 + count [1] $end
-$var wire 1 , count [0] $end
+$var reg 2 ! KEY [1:0] $end
+$var wire 1 " LEDR [7] $end
+$var wire 1 # LEDR [6] $end
+$var wire 1 $ LEDR [5] $end
+$var wire 1 % LEDR [4] $end
+$var wire 1 & LEDR [3] $end
+$var wire 1 ' LEDR [2] $end
+$var wire 1 ( LEDR [1] $end
+$var wire 1 ) LEDR [0] $end
 
 $scope module i1 $end
-$var wire 1 - gnd $end
-$var wire 1 . vcc $end
-$var wire 1 / unknown $end
-$var tri1 1 0 devclrn $end
-$var tri1 1 1 devpor $end
-$var tri1 1 2 devoe $end
-$var wire 1 3 HEX7[0]~output_o $end
-$var wire 1 4 HEX7[1]~output_o $end
-$var wire 1 5 HEX7[2]~output_o $end
-$var wire 1 6 HEX7[3]~output_o $end
-$var wire 1 7 HEX7[4]~output_o $end
-$var wire 1 8 HEX7[5]~output_o $end
-$var wire 1 9 HEX7[6]~output_o $end
-$var wire 1 : count[0]~output_o $end
-$var wire 1 ; count[1]~output_o $end
-$var wire 1 < count[2]~output_o $end
-$var wire 1 = count[3]~output_o $end
-$var wire 1 > CLOCK_50~input_o $end
-$var wire 1 ? CLOCK_50~inputclkctrl_outclk $end
-$var wire 1 @ count~2_combout $end
-$var wire 1 A count[2]~reg0_q $end
-$var wire 1 B count~0_combout $end
-$var wire 1 C count[0]~reg0_q $end
-$var wire 1 D count~1_combout $end
-$var wire 1 E count[3]~reg0_q $end
-$var wire 1 F count~3_combout $end
-$var wire 1 G count[1]~reg0_q $end
-$var wire 1 H display|Add14~0_combout $end
-$var wire 1 I display|Add11~0_combout $end
-$var wire 1 J display|Add8~0_combout $end
-$var wire 1 K display|Add6~0_combout $end
-$var wire 1 L display|Add3~0_combout $end
-$var wire 1 M display|Add0~0_combout $end
-$var wire 1 N display|out [6] $end
-$var wire 1 O display|out [5] $end
-$var wire 1 P display|out [4] $end
-$var wire 1 Q display|out [3] $end
-$var wire 1 R display|out [2] $end
-$var wire 1 S display|out [1] $end
-$var wire 1 T display|out [0] $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 KEY[1]~input_o $end
+$var wire 1 1 LEDR[0]~output_o $end
+$var wire 1 2 LEDR[1]~output_o $end
+$var wire 1 3 LEDR[2]~output_o $end
+$var wire 1 4 LEDR[3]~output_o $end
+$var wire 1 5 LEDR[4]~output_o $end
+$var wire 1 6 LEDR[5]~output_o $end
+$var wire 1 7 LEDR[6]~output_o $end
+$var wire 1 8 LEDR[7]~output_o $end
+$var wire 1 9 KEY[0]~input_o $end
+$var wire 1 : KEY[0]~inputclkctrl_outclk $end
+$var wire 1 ; value[0]~21_combout $end
+$var wire 1 < value[1]~7_combout $end
+$var wire 1 = value[1]~8 $end
+$var wire 1 > value[2]~9_combout $end
+$var wire 1 ? value[2]~10 $end
+$var wire 1 @ value[3]~11_combout $end
+$var wire 1 A value[3]~12 $end
+$var wire 1 B value[4]~13_combout $end
+$var wire 1 C value[4]~14 $end
+$var wire 1 D value[5]~15_combout $end
+$var wire 1 E value[5]~16 $end
+$var wire 1 F value[6]~17_combout $end
+$var wire 1 G value[6]~18 $end
+$var wire 1 H value[7]~19_combout $end
+$var wire 1 I value [7] $end
+$var wire 1 J value [6] $end
+$var wire 1 K value [5] $end
+$var wire 1 L value [4] $end
+$var wire 1 M value [3] $end
+$var wire 1 N value [2] $end
+$var wire 1 O value [1] $end
+$var wire 1 P value [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0!
+bx0 !
+0)
 0(
 0'
 0&
 0%
 0$
 0#
-1"
-0,
-0+
+0"
 0*
-0)
-0-
+1+
+x,
+1-
 1.
-x/
-10
-11
-12
+1/
+x0
+01
+02
 03
 04
 05
 06
 07
 08
-19
+09
 0:
-0;
+1;
 0<
 0=
 0>
-0?
+1?
 0@
 0A
-1B
-0C
+0B
+1C
 0D
 0E
 0F
-0G
-0H
-0I
-0J
-0K
-0L
-0M
-zT
-zS
-zR
-zQ
-0P
-zO
-zN
-$end
-#2000
-1!
-1>
-1?
-1C
-1:
-1,
-1L
-1P
-1K
-1H
-1F
-0B
-13
-16
-17
-18
-1#
-1$
-1%
-1(
-#4000
-0!
-0>
-0?
-#6000
-1!
-1>
-1?
 1G
-0C
-0:
-1;
-1M
-1+
-0,
+0H
 0P
-0K
-1J
-0H
-1B
-03
-15
-06
-07
-09
-0"
-0$
-0%
-1&
-0(
-#8000
-0!
-0>
-0?
-#10000
-1!
-1>
-1?
-1C
-1:
-1,
-1P
-0J
-0F
-0B
-1@
-05
-17
-1$
-0&
-#12000
-0!
-0>
-0?
-#14000
-1!
-1>
-1?
-0G
-0C
-1A
-1<
-0:
-0;
-0+
-0,
-1*
+0O
+0N
+0M
 0L
-1K
-1H
-1B
-13
-16
-08
-0#
-1%
-1(
-#16000
-0!
-0>
-0?
-#18000
-1!
-1>
-1?
-1C
-1:
-1,
 0K
-1I
-0H
-1F
-0B
-03
-14
-06
-0%
-1'
-0(
+0J
+0I
+$end
+#2500
+bx1 !
+19
+1:
+#5000
+bx0 !
+09
+0:
+1P
+11
+1)
+1<
+0;
+#7500
+bx1 !
+19
+1:
+#10000
+bx0 !
+09
+0:
+0P
+1O
+12
+01
+0)
+1(
+1;
+#12500
+bx1 !
+19
+1:
+#15000
+bx0 !
+09
+0:
+1P
+11
+1=
+1)
+0<
+0;
+1>
+#17500
+bx1 !
+19
+1:
 #20000
+bx0 !
+09
+0:
+0P
+0O
+1N
+13
+02
+01
+0=
+0?
+0)
+0(
+1'
+1;
+0>
+1?
+1>
+1@
+0@
+#22500
+bx1 !
+19
+1:
+#25000
+bx0 !
+09
+0:
+1P
+11
+1)
+1<
+0;
+#27500
+bx1 !
+19
+1:
+#30000
