@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part2
-Wed Nov 14 15:57:19 2018
+Wed Nov 28 15:07:34 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 14 15:57:19 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 28 15:07:34 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Part2                                       ;
-; Top-level Entity Name              ; Part2                                       ;
+; Top-level Entity Name              ; Part3                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 46                                          ;
 ;     Total combinational functions  ; 46                                          ;
 ;     Dedicated logic registers      ; 31                                          ;
 ; Total registers                    ; 31                                          ;
-; Total pins                         ; 46                                          ;
+; Total pins                         ; 25                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Part2              ; Part2              ;
+; Top-level entity name                                            ; Part3              ; Part2              ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -167,9 +167,9 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ; Library ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
-; clock_1hz.v                      ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/clock_1hz.v             ;         ;
-; Part2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v                 ;         ;
-; seven_segment_display.v          ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/seven_segment_display.v ;         ;
+; Part3.v                          ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v                 ;         ;
+; clock_1hz.v                      ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/clock_1hz.v             ;         ;
+; seven_segment_display.v          ; yes             ; User Verilog HDL File  ; C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/seven_segment_display.v ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
 
 
@@ -194,14 +194,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 31             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 46             ;
+; I/O pins                                    ; 25             ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 27             ;
-; Total fan-out                               ; 293            ;
-; Average fan-out                             ; 1.73           ;
+; Total fan-out                               ; 251            ;
+; Average fan-out                             ; 1.98           ;
 +---------------------------------------------+----------------+
 
 
@@ -210,9 +210,9 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name           ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-----------------------+--------------+
-; |Part2                             ; 46 (4)              ; 31 (4)                    ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |Part2                               ; Part2                 ; work         ;
-;    |clock_1hz:clock|               ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|clock_1hz:clock               ; clock_1hz             ; work         ;
-;    |seven_segment_display:display| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|seven_segment_display:display ; seven_segment_display ; work         ;
+; |Part3                             ; 46 (4)              ; 31 (4)                    ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |Part3                               ; Part3                 ; work         ;
+;    |clock_1hz:clock|               ; 35 (35)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|clock_1hz:clock               ; clock_1hz             ; work         ;
+;    |seven_segment_display:display| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|seven_segment_display:display ; seven_segment_display ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 46                          ;
+; boundary_port         ; 25                          ;
 ; cycloneiii_ff         ; 31                          ;
 ;     SCLR              ; 26                          ;
 ;     plain             ; 5                           ;
@@ -260,7 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -270,51 +270,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 15:56:59 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part2 -c Part2
+    Info: Processing started: Wed Nov 28 15:07:03 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part3 -c Part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file part3.v
+    Info (12023): Found entity 1: Part3 File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file ped_flip_flop.v
-    Info (12023): Found entity 1: ped_flip_flop File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/ped_flip_flop.v Line: 3
+    Info (12023): Found entity 1: ped_flip_flop File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/ped_flip_flop.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file gated_d_latch.v
-    Info (12023): Found entity 1: gated_d_latch File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/gated_d_latch.v Line: 2
+    Info (12023): Found entity 1: gated_d_latch File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/gated_d_latch.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file clock_1hz.v
-    Info (12023): Found entity 1: clock_1hz File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/clock_1hz.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file part2.v
-    Info (12023): Found entity 1: Part2 File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 7
+    Info (12023): Found entity 1: clock_1hz File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/clock_1hz.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file seven_segment_display.v
-    Info (12023): Found entity 1: seven_segment_display File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/seven_segment_display.v Line: 2
-Info (12127): Elaborating entity "Part2" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Part2.v(33): truncated value with size 32 to match size of target (4) File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 33
-Warning (10034): Output port "LEDR[10..1]" at Part2.v(15) has no driver File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-Info (12128): Elaborating entity "clock_1hz" for hierarchy "clock_1hz:clock" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 25
-Warning (10230): Verilog HDL assignment warning at clock_1hz.v(14): truncated value with size 32 to match size of target (26) File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/clock_1hz.v Line: 14
-Info (12128): Elaborating entity "seven_segment_display" for hierarchy "seven_segment_display:display" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 43
+    Info (12023): Found entity 1: seven_segment_display File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/seven_segment_display.v Line: 2
+Info (12127): Elaborating entity "Part3" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Part3.v(30): truncated value with size 32 to match size of target (4) File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 30
+Warning (10034): Output port "LEDR[10..1]" at Part3.v(12) has no driver File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+Info (12128): Elaborating entity "clock_1hz" for hierarchy "clock_1hz:clock" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 22
+Warning (10230): Verilog HDL assignment warning at clock_1hz.v(14): truncated value with size 32 to match size of target (26) File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/clock_1hz.v Line: 14
+Info (12128): Elaborating entity "seven_segment_display" for hierarchy "seven_segment_display:display" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
-    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 15
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 16
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part2/Part2.v Line: 16
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 13
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/USER1/Digital Logic/Counters_Lab4/Part3/Part3.v Line: 13
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 43 output pins
+    Info (21059): Implemented 22 output pins
     Info (21061): Implemented 46 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Wed Nov 14 15:57:19 2018
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Wed Nov 28 15:07:34 2018
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:43
 
 
